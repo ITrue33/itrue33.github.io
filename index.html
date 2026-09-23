@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Andrey Vilkov — Junior Java Developer and QA Automation Engineer. Portfolio business card website." />
+  <meta name="description" content="Andrey Vilkov — Junior Java Backend Developer with 3+ years of commercial Java automation experience. Java 17, Spring, REST API, SQL and CI/CD." />
   <meta name="theme-color" content="#0f172a" />
-  <title>Andrey Vilkov | Junior Java Developer</title>
+  <title>Andrey Vilkov | Junior Java Backend Developer</title>
   <style>
     :root {
       --bg: #020617;
@@ -38,6 +38,9 @@
     }
 
     a { color: inherit; text-decoration: none; }
+    a:focus-visible { outline: 3px solid #93c5fd; outline-offset: 5px; }
+    .contact-details { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 20px; color: #bfdbfe; }
+    .contact-details a { overflow-wrap: anywhere; text-decoration: underline; text-underline-offset: 4px; }
     img { max-width: 100%; display: block; }
 
     .container {
@@ -179,13 +182,13 @@
     .label { color: var(--muted); }
     .value { text-align: right; }
 
-    .two-col, .grid-2, .grid-4, .timeline {
+    .two-col, .grid-2, .grid-3, .timeline {
       display: grid;
       gap: 22px;
     }
 
     .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
     .content-card { padding: 28px; }
     .content-card p { margin: 0; color: var(--muted); }
@@ -289,7 +292,7 @@
     @media (max-width: 1080px) {
       .hero-grid,
       .grid-2,
-      .grid-4 {
+      .grid-3 {
         grid-template-columns: 1fr;
       }
 
@@ -319,29 +322,35 @@
     <div class="container">
       <div class="hero-grid">
         <div>
-          <div class="pill">Open to relocation • Junior Java Developer</div>
+          <div class="pill">Open to Junior Java Backend roles</div>
           <h1>Andrey Vilkov</h1>
-          <p class="hero-subtitle">Junior Java Developer • QA Automation Engineer</p>
+          <p class="hero-subtitle">Junior Java Backend Developer</p>
           <p class="hero-description">
-            Junior Java Developer with practical experience in Java-based test automation, REST API testing,
-            maintainable framework development, and collaboration with QA and engineering teams. Currently
-            strengthening backend development skills and preparing for full-time Java opportunities.
+            Java engineer with over 3 years of commercial experience developing a Java-based test automation
+            framework for a banking application. Building on Java 17, REST API, DTOs and CI/CD experience
+            to develop backend applications with Java and Spring.
           </p>
           <div class="actions">
-            <a class="button button-primary" href="mailto:vilkov_andrew@mail.ru">Contact Me</a>
+            <a class="button button-primary" href="mailto:alladin21@mail.ru">Contact Me</a>
             <a class="button" href="https://github.com/ITrue33" target="_blank" rel="noreferrer">GitHub</a>
             <a class="button" href="https://www.linkedin.com/in/andrew-vilkov" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+          <div class="contact-details">
+            <a href="mailto:alladin21@mail.ru">alladin21@mail.ru</a>
+            <a href="tel:+79157550496">+7 (915) 755-0496</a>
+            <a href="https://t.me/Vilkov_AM" target="_blank" rel="noreferrer">Telegram: @Vilkov_AM</a>
           </div>
         </div>
 
         <aside class="card snapshot">
           <h2>Quick Snapshot</h2>
           <div class="snapshot-row"><span class="label">Location</span><span class="value">Saint Petersburg, Russia</span></div>
-          <div class="snapshot-row"><span class="label">Relocation</span><span class="value">Available</span></div>
-          <div class="snapshot-row"><span class="label">Current Role</span><span class="value">QA Automation Engineer</span></div>
-          <div class="snapshot-row"><span class="label">Main Focus</span><span class="value">Java Backend Transition</span></div>
-          <div class="snapshot-row"><span class="label">Degree</span><span class="value">B.Sc. in Computer Systems</span></div>
-          <div class="snapshot-row"><span class="label">Current Learning</span><span class="value">Yandex Practicum: Java Developer (Advanced)</span></div>
+          <div class="snapshot-row"><span class="label">Relocation</span><span class="value">Not available</span></div>
+          <div class="snapshot-row"><span class="label">Business Travel</span><span class="value">Occasional trips</span></div>
+          <div class="snapshot-row"><span class="label">Commercial Experience</span><span class="value">3+ years in Java Automation</span></div>
+          <div class="snapshot-row"><span class="label">Languages</span><span class="value">Russian — native<br>English — A2</span></div>
+          <div class="snapshot-row"><span class="label">Citizenship / Work Authorization</span><span class="value">Russia / Russia</span></div>
+          <div class="snapshot-row"><span class="label">Training</span><span class="value">Yandex Practicum<br>Completed September 2026</span></div>
         </aside>
       </div>
     </div>
@@ -355,14 +364,16 @@
         <div class="grid-2" style="margin-top: 28px;">
           <article class="card content-card">
             <p>
-              I am a beginner Java developer with an engineering background and hands-on experience writing utilities,
-              maintaining automation frameworks, and supporting reliable software delivery.
+              My commercial experience is in Java automation for a banking application: API and UI testing,
+              reusable DTOs and configuration, framework refactoring, certificate handling and CI pipelines.
+              I work closely with developers and QA engineers to investigate failures and improve test coverage.
             </p>
           </article>
           <article class="card content-card">
             <p>
-              My recent work is centered around Java 17, test architecture, CI pipelines, reporting, and framework
-              refactoring. I am moving toward production backend development and building a strong Java portfolio.
+              I am looking for a Junior Java Backend Developer role to grow in backend application design
+              and implementation. I completed Yandex Practicum’s Java Developer: Extended Program in September
+              2026, covering Spring, databases, stream processing and cloud-native applications.
             </p>
           </article>
         </div>
@@ -373,40 +384,46 @@
       <div class="container">
         <span class="eyebrow">Skills</span>
         <h2 class="section-title">Technology Stack</h2>
-        <div class="grid-4" style="margin-top: 28px;">
+        <div class="grid-3" style="margin-top: 28px;">
           <article class="card skill-card">
-            <h3>Languages</h3>
+            <h3>Commercial Experience</h3>
             <div class="tags">
-              <span class="tag">Java</span>
-              <span class="tag">C#</span>
+              <span class="tag">Java 17</span>
+              <span class="tag">REST API</span>
+              <span class="tag">DTO</span>
+              <span class="tag">Gradle</span>
+              <span class="tag">JUnit 5</span>
+              <span class="tag">Rest Assured</span>
+              <span class="tag">Selenide</span>
+              <span class="tag">Jenkins</span>
+              <span class="tag">Allure</span>
+              <span class="tag">Jira</span>
+              <span class="tag">Bouncy Castle</span>
             </div>
           </article>
           <article class="card skill-card">
-            <h3>Testing</h3>
+            <h3>Backend Skills</h3>
             <div class="tags">
-              <span class="tag">JUnit 5</span>
-              <span class="tag">Selenide</span>
-              <span class="tag">Rest Assured</span>
+              <span class="tag">Spring Framework</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Spring Data</span>
+              <span class="tag">Spring Security</span>
+              <span class="tag">Spring Cloud</span>
+              <span class="tag">MVC</span>
+              <span class="tag">Hibernate ORM</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Apache Kafka</span>
+              <span class="tag">Avro</span>
             </div>
           </article>
           <article class="card skill-card">
             <h3>Tools</h3>
             <div class="tags">
-              <span class="tag">Gradle</span>
-              <span class="tag">Jenkins</span>
-              <span class="tag">Allure</span>
-              <span class="tag">Jira</span>
               <span class="tag">Git</span>
-            </div>
-          </article>
-          <article class="card skill-card">
-            <h3>Practices</h3>
-            <div class="tags">
-              <span class="tag">OOP</span>
-              <span class="tag">Clean Code</span>
-              <span class="tag">REST API Testing</span>
-              <span class="tag">UI Automation</span>
-              <span class="tag">Agile / Scrum</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Maven</span>
+              <span class="tag">Bash</span>
+              <span class="tag">IntelliJ IDEA</span>
             </div>
           </article>
         </div>
@@ -421,52 +438,53 @@
           <article class="card job-card">
             <div class="job-header">
               <div>
-                <h3>QA Automation Engineer</h3>
+                <h3>Java Automation Engineer / QA Automation Engineer</h3>
                 <div class="job-company">Bell Integrator Innovations LLC</div>
+                <div class="subtle">Project: a banking application for a major bank</div>
               </div>
               <div class="job-period">May 2023 — June 2026</div>
             </div>
             <ul class="job-list">
-              <li><span class="dot"></span><span>Built and maintained an automation framework using Java 17, Gradle, and JUnit 5.</span></li>
-              <li><span class="dot"></span><span>Developed UI tests with Selenide and API tests with Rest Assured with a 40% API and 60% UI split.</span></li>
-              <li><span class="dot"></span><span>Refactored the test framework to improve maintainability, readability, and long-term stability.</span></li>
-              <li><span class="dot"></span><span>Integrated Allure reporting and supported centralized test execution pipelines in Jenkins.</span></li>
-              <li><span class="dot"></span><span>Collaborated with QA and development teams, analyzed test runs, and synchronized execution results with Jira.</span></li>
+              <li><span class="dot"></span><span>Developed a Java-based solution for automated UI and API testing of a banking application.</span></li>
+              <li><span class="dot"></span><span>Built API tests with Java and Rest Assured: constructed HTTP requests, worked with DTOs, and verified response status codes, headers and bodies.</span></li>
+              <li><span class="dot"></span><span>Maintained and extended the shared framework codebase by extracting reusable DTOs, configurations and helper classes.</span></li>
+              <li><span class="dot"></span><span>Refactored UI tests using Page Object and Page Component patterns, reducing coupling to UI implementation details.</span></li>
+              <li><span class="dot"></span><span>Integrated Bouncy Castle for programmatic certificate handling, eliminating a manual preparation shell script before test runs.</span></li>
+              <li><span class="dot"></span><span>Configured automated test runs in Jenkins and analyzed execution results with Jenkins and Allure.</span></li>
+              <li><span class="dot"></span><span>Integrated test execution results with Jira to track test statuses and defects.</span></li>
+              <li><span class="dot"></span><span>Investigated test failures, defects and coverage gaps together with developers and the QA team.</span></li>
             </ul>
           </article>
 
           <article class="card job-card">
             <div class="job-header">
               <div>
-                <h3>Deputy Head of IT Operations Department</h3>
-                <div class="job-company">Pension Fund of the Russian Federation, Vladimir Region</div>
+                <h3>Deputy Head of Information Systems Operations and Support</h3>
+                <div class="job-company">IT Department, Pension Fund of the Russian Federation, Vladimir Region</div>
               </div>
-              <div class="job-period">Mar 2019 — May 2022</div>
+              <div class="job-period">2019 — 2022</div>
             </div>
-            <ul class="job-list">
-              <li><span class="dot"></span><span>Managed support and maintenance of enterprise information systems.</span></li>
-              <li><span class="dot"></span><span>Coordinated internal IT operations and contributed to process optimization and system reliability.</span></li>
-            </ul>
           </article>
 
           <article class="card job-card">
             <div class="job-header">
               <div>
                 <h3>Earlier Roles</h3>
-                <div class="job-company">Programmer Technician • Electronics Engineer • Accountant-Programmer</div>
+                <div class="job-company">IT, engineering and business systems</div>
               </div>
               <div class="job-period">2011 — 2016</div>
             </div>
             <ul class="job-list">
-              <li><span class="dot"></span><span>Developed small internal tools for data collection, reporting, and workflow support.</span></li>
-              <li><span class="dot"></span><span>Supported hardware, software, local infrastructure, and day-to-day business systems.</span></li>
+              <li><span class="dot"></span><span>2015 — 2016: Electronics Engineer, Murom Maternity Hospital.</span></li>
+              <li><span class="dot"></span><span>2014 — 2015: Programmer Technician, Murom City Hospital No. 3.</span></li>
+              <li><span class="dot"></span><span>2011 — 2014: Lead Accountant-Programmer, Education Department of the Murom District Administration.</span></li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="education">
       <div class="container">
         <div class="grid-2">
           <article class="card content-card">
@@ -474,33 +492,42 @@
             <h2 class="section-title">Academic Background</h2>
             <div style="margin-top: 28px; display: grid; gap: 18px;">
               <div class="edu-item">
-                <h3>B.Sc. in Computer Systems, Complexes, Systems and Networks</h3>
-                <div class="subtle">Murom Institute (Branch of Vladimir State University)</div>
-                <div class="accent" style="margin-top: 10px;">Graduated: 2015</div>
+                <h3>Computers, Complexes, Systems and Networks</h3>
+                <div class="subtle">Murom Institute, a branch of Vladimir State University named after Alexander and Nikolay Stoletov</div>
+                <div class="accent" style="margin-top: 10px;">Higher education · 2015</div>
               </div>
               <div class="edu-item">
-                <h3>Associate Degree in Computer Systems, Complexes, Systems and Networks</h3>
+                <h3>Maintenance and Repair of Computer Equipment and Systems</h3>
                 <div class="subtle">Murom Technical College of Radio Electronics</div>
-                <div class="accent" style="margin-top: 10px;">Graduated: 2009</div>
+                <div class="accent" style="margin-top: 10px;">Secondary vocational education · 2009</div>
               </div>
             </div>
           </article>
 
           <article class="card content-card">
-            <span class="eyebrow">Development</span>
-            <h2 class="section-title">Current Learning Path</h2>
+            <span class="eyebrow">Professional Training</span>
+            <h2 class="section-title">Courses &amp; Credentials</h2>
             <div style="margin-top: 28px; display: grid; gap: 18px;">
               <div class="learning-card">
-                <h3>Java Developer (Advanced)</h3>
-                <div class="subtle">Yandex Practicum</div>
-                <div class="accent" style="margin-top: 10px;">July 2025 — September 2026</div>
+                <h3>Java Developer: Extended Program</h3>
+                <div class="subtle">Yandex Practicum / Yandex EdTech</div>
+                <div class="accent" style="margin-top: 10px;">Completed: 16 September 2026</div>
+                <div class="subtle">10 July 2025 — 16 September 2026 · 855 hours</div>
+                <div class="subtle">Qualification: Developer</div>
+                <div class="actions" style="margin-top: 20px;">
+                  <a class="button button-primary" href="assets/documents/Andrey_Vilkov_Java_Developer_Diploma_2026.pdf" target="_blank" rel="noreferrer">View Diploma (PDF, EN)</a>
+                  <a class="button" href="assets/documents/Andrey_Vilkov_Java_Developer_Diploma_2026.pdf" download>Download Diploma</a>
+                </div>
               </div>
-              <div class="tags">
-                <span class="tag">Java Core</span>
-                <span class="tag">Backend Development</span>
-                <span class="tag">Spring Boot</span>
-                <span class="tag">System Design Basics</span>
-                <span class="tag">Production-Ready Code</span>
+              <div class="learning-card">
+                <h3>Test Automation Specialist</h3>
+                <div class="subtle">Bell Integrator — Test Automation School</div>
+                <div class="accent" style="margin-top: 10px;">2023</div>
+              </div>
+              <div class="learning-card">
+                <h3>IBM DB2, WAS and MQ Administration</h3>
+                <div class="subtle">Network Academy Training Center · Distance learning</div>
+                <div class="accent" style="margin-top: 10px;">2021</div>
               </div>
             </div>
           </article>
@@ -514,10 +541,11 @@
       <div class="footer-wrap">
         <div>
           <h2>Let’s build something reliable.</h2>
-          <p>Open to junior Java developer opportunities, relocation, and international teams.</p>
+          <p>Seeking Junior Java Backend Developer opportunities.<br>Based in Saint Petersburg · No relocation · Occasional business travel.</p>
         </div>
         <div class="actions" style="margin-top: 0;">
-          <a class="button button-primary" href="mailto:vilkov_andrew@mail.ru">Email Me</a>
+          <a class="button button-primary" href="mailto:alladin21@mail.ru">Email Me</a>
+          <a class="button" href="https://t.me/Vilkov_AM" target="_blank" rel="noreferrer">Telegram</a>
           <a class="button" href="https://github.com/ITrue33" target="_blank" rel="noreferrer">View GitHub</a>
         </div>
       </div>
