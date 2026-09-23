@@ -6,320 +6,52 @@
   <meta name="description" content="Andrey Vilkov — Junior Java Backend Developer with 3+ years of commercial Java automation experience. Java 17, Spring, REST API, SQL and CI/CD." />
   <meta name="theme-color" content="#0f172a" />
   <title>Andrey Vilkov | Junior Java Backend Developer</title>
-  <style>
-    :root {
-      --bg: #020617;
-      --panel: rgba(15, 23, 42, 0.88);
-      --panel-solid: #0f172a;
-      --panel-soft: #111827;
-      --border: rgba(148, 163, 184, 0.18);
-      --text: #e2e8f0;
-      --muted: #94a3b8;
-      --blue: #3b82f6;
-      --blue-soft: rgba(59, 130, 246, 0.16);
-      --emerald: #34d399;
-      --shadow: 0 24px 60px rgba(2, 6, 23, 0.45);
-      --radius-xl: 28px;
-      --radius-lg: 20px;
-      --max-width: 1160px;
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at top right, rgba(59, 130, 246, 0.16), transparent 24%),
-        radial-gradient(circle at top left, rgba(52, 211, 153, 0.10), transparent 20%),
-        linear-gradient(180deg, #020617 0%, #0b1120 100%);
-      line-height: 1.6;
-    }
-
-    a { color: inherit; text-decoration: none; }
-    a:focus-visible { outline: 3px solid #93c5fd; outline-offset: 5px; }
-    .contact-details { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 20px; color: #bfdbfe; }
-    .contact-details a { overflow-wrap: anywhere; text-decoration: underline; text-underline-offset: 4px; }
-    img { max-width: 100%; display: block; }
-
-    .container {
-      width: min(calc(100% - 32px), var(--max-width));
-      margin: 0 auto;
-    }
-
-    .section { padding: 72px 0; }
-    .section-title {
-      margin: 0;
-      font-size: clamp(1.95rem, 3vw, 2.7rem);
-      line-height: 1.1;
-      letter-spacing: -0.03em;
-    }
-    .eyebrow {
-      display: inline-block;
-      margin-bottom: 14px;
-      color: #93c5fd;
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      font-size: 0.76rem;
-      font-weight: 700;
-    }
-
-    .hero {
-      position: relative;
-      overflow: hidden;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.3fr 0.9fr;
-      gap: 28px;
-      align-items: center;
-      min-height: 100vh;
-      padding: 48px 0;
-    }
-
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 16px;
-      border-radius: 999px;
-      background: rgba(52, 211, 153, 0.12);
-      border: 1px solid rgba(52, 211, 153, 0.24);
-      color: #a7f3d0;
-      font-size: 0.92rem;
-      font-weight: 600;
-    }
-
-    .hero h1 {
-      margin: 18px 0 0;
-      font-size: clamp(3rem, 6vw, 5.4rem);
-      line-height: 0.98;
-      letter-spacing: -0.05em;
-    }
-
-    .hero-subtitle {
-      margin: 18px 0 0;
-      color: #bfdbfe;
-      font-size: clamp(1.05rem, 2vw, 1.35rem);
-      font-weight: 600;
-    }
-
-    .hero-description {
-      max-width: 740px;
-      margin: 18px 0 0;
-      color: var(--muted);
-      font-size: 1.06rem;
-    }
-
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 32px;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 48px;
-      padding: 0 20px;
-      border-radius: 18px;
-      border: 1px solid var(--border);
-      background: rgba(15, 23, 42, 0.78);
-      color: var(--text);
-      font-weight: 700;
-      transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
-      box-shadow: var(--shadow);
-    }
-
-    .button:hover {
-      transform: translateY(-2px);
-      border-color: rgba(148, 163, 184, 0.42);
-      background: rgba(17, 24, 39, 0.96);
-    }
-
-    .button-primary {
-      background: linear-gradient(135deg, #2563eb, #3b82f6);
-      border-color: rgba(59, 130, 246, 0.4);
-      color: white;
-    }
-
-    .button-primary:hover {
-      background: linear-gradient(135deg, #1d4ed8, #2563eb);
-      border-color: rgba(96, 165, 250, 0.55);
-    }
-
-    .card {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-xl);
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(14px);
-    }
-
-    .snapshot {
-      padding: 28px;
-    }
-
-    .snapshot h2 {
-      margin: 0 0 20px;
-      font-size: 1.4rem;
-    }
-
-    .snapshot-row {
-      display: flex;
-      justify-content: space-between;
-      gap: 18px;
-      padding: 16px 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .snapshot-row:last-child { border-bottom: 0; }
-    .label { color: var(--muted); }
-    .value { text-align: right; }
-
-    .two-col, .grid-2, .grid-3, .timeline {
-      display: grid;
-      gap: 22px;
-    }
-
-    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-
-    .content-card { padding: 28px; }
-    .content-card p { margin: 0; color: var(--muted); }
-
-    .skill-card { padding: 24px; }
-    .skill-card h3 { margin: 0 0 16px; font-size: 1.06rem; text-transform: capitalize; }
-
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .tag {
-      padding: 8px 12px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: rgba(2, 6, 23, 0.52);
-      color: #cbd5e1;
-      font-size: 0.92rem;
-    }
-
-    .job-card { padding: 28px; }
-
-    .job-header {
-      display: flex;
-      justify-content: space-between;
-      gap: 18px;
-      padding-bottom: 18px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .job-header h3 {
-      margin: 0;
-      font-size: 1.2rem;
-    }
-
-    .job-company { margin-top: 6px; color: #cbd5e1; }
-    .job-period { color: #93c5fd; font-weight: 700; white-space: nowrap; }
-
-    .job-list {
-      margin: 18px 0 0;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      gap: 12px;
-    }
-
-    .job-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      color: var(--muted);
-    }
-
-    .dot {
-      width: 10px;
-      height: 10px;
-      margin-top: 9px;
-      border-radius: 50%;
-      background: var(--emerald);
-      flex: none;
-    }
-
-    .edu-item, .learning-card {
-      padding: 22px;
-      border-radius: var(--radius-lg);
-      background: rgba(2, 6, 23, 0.5);
-      border: 1px solid var(--border);
-    }
-
-    .edu-item h3, .learning-card h3 {
-      margin: 0;
-      font-size: 1.05rem;
-    }
-
-    .subtle { color: var(--muted); }
-    .accent { color: #93c5fd; font-weight: 700; }
-
-    .footer {
-      border-top: 1px solid var(--border);
-      padding: 34px 0 56px;
-    }
-
-    .footer-wrap {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      align-items: center;
-      padding: 24px 0 0;
-    }
-
-    .footer h2 {
-      margin: 0;
-      font-size: clamp(1.7rem, 3vw, 2.3rem);
-      line-height: 1.1;
-    }
-
-    .footer p { margin: 12px 0 0; color: var(--muted); }
-
-    @media (max-width: 1080px) {
-      .hero-grid,
-      .grid-2,
-      .grid-3 {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-grid {
-        min-height: auto;
-        padding: 72px 0 48px;
-      }
-    }
-
-    @media (max-width: 720px) {
-      .section { padding: 56px 0; }
-      .container { width: min(calc(100% - 24px), var(--max-width)); }
-      .job-header,
-      .snapshot-row,
-      .footer-wrap {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .value, .job-period { text-align: left; white-space: normal; }
-      .button { width: 100%; }
-      .actions { flex-direction: column; }
-    }
-  </style>
+  <link rel="canonical" href="https://itrue33.github.io/" />
+  <link rel="alternate" hreflang="en" href="https://itrue33.github.io/" />
+  <link rel="alternate" hreflang="ru" href="https://itrue33.github.io/ru/" />
+  <link rel="alternate" hreflang="x-default" href="https://itrue33.github.io/" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Andrey Vilkov | Junior Java Backend Developer" />
+  <meta property="og:description" content="Andrey Vilkov — Junior Java Backend Developer with 3+ years of commercial Java automation experience. Java 17, Spring, REST API, SQL and CI/CD." />
+  <meta property="og:url" content="https://itrue33.github.io/" />
+  <meta property="og:site_name" content="Andrey Vilkov" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ru_RU" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Andrey Vilkov | Junior Java Backend Developer" />
+  <meta name="twitter:description" content="Andrey Vilkov — Junior Java Backend Developer with 3+ years of commercial Java automation experience. Java 17, Spring, REST API, SQL and CI/CD." />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "https://itrue33.github.io/#profile",
+  "url": "https://itrue33.github.io/",
+  "name": "Andrey Vilkov | Junior Java Backend Developer",
+  "description": "Andrey Vilkov — Junior Java Backend Developer with 3+ years of commercial Java automation experience. Java 17, Spring, REST API, SQL and CI/CD.",
+  "inLanguage": "en",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://itrue33.github.io/#person",
+    "name": "Andrey Vilkov",
+    "url": "https://itrue33.github.io/",
+    "description": "Andrey Vilkov — Junior Java Backend Developer with 3+ years of commercial Java automation experience. Java 17, Spring, REST API, SQL and CI/CD.",
+    "sameAs": [
+      "https://github.com/ITrue33",
+      "https://www.linkedin.com/in/andrew-vilkov"
+    ]
+  }
+}
+  </script>
 </head>
 <body>
   <header class="hero" id="top">
     <div class="container">
+      <nav class="language-nav" aria-label="Site language">
+        <a href="/" hreflang="en" lang="en" aria-current="page">English</a>
+        <a href="/ru/" hreflang="ru" lang="ru">Русский</a>
+      </nav>
       <div class="hero-grid">
         <div>
           <div class="pill">Open to Junior Java Backend roles</div>
@@ -511,8 +243,8 @@
                 <div class="subtle">10 July 2025 — 16 September 2026 · 855 hours</div>
                 <div class="subtle">Qualification: Developer</div>
                 <div class="actions" style="margin-top: 20px;">
-                  <a class="button button-primary" href="assets/documents/Andrey_Vilkov_Java_Developer_Diploma_2026.pdf" target="_blank" rel="noreferrer">View Diploma (PDF, EN)</a>
-                  <a class="button" href="assets/documents/Andrey_Vilkov_Java_Developer_Diploma_2026.pdf" download>Download Diploma</a>
+                  <a class="button button-primary" href="/assets/documents/Andrey_Vilkov_Java_Developer_Diploma_2026.pdf" target="_blank" rel="noreferrer">View Diploma (PDF, EN)</a>
+                  <a class="button" href="/assets/documents/Andrey_Vilkov_Java_Developer_Diploma_2026.pdf" download>Download Diploma</a>
                 </div>
               </div>
               <div class="learning-card">
